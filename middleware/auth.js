@@ -16,7 +16,6 @@ const authMiddleware = (req, res, next) => {
   } catch (err) {
     return res.status(401).json({ msg: "Invalid token" });
   }
-  console.log("AUTH HEADER:", req.headers.authorization);
   
 };
 
